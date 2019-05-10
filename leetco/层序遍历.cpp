@@ -11,8 +11,8 @@ vector<vector<int>> levelOrder(TreeNode* root) {
                 TreeNode* tre = nums.front() ;//将队列头赋值
                 num.push_back(tre->val) ;//将其加入数组
                 nums.pop() ;  
-               if(tre->left) nextnodes.push(tre->left);
-                if(tre->right)nextnodes.push(tre->right);
+               if(tre->left) nextnodes.push(tre->left);//当左子树不为空则 递归左子树 
+                if(tre->right)nextnodes.push(tre->right);//当右子树不为空则 递归右子树 
             }
             nums=nextnodes;
             res.push_back(num);
