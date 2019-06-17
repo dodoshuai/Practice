@@ -1,1 +1,3 @@
-﻿  测试代码.vcxproj -> F:\cangku\Practice\vs_2019\测试代码\Debug\测试代码.exe
+﻿  反转字符串.cpp
+F:\cangku\Practice\vs_2019\测试代码\反转字符串.cpp(5): warning C4018: “<”: 有符号/无符号不匹配
+  测试代码.vcxproj -> F:\cangku\Practice\vs_2019\测试代码\Debug\测试代码.exe

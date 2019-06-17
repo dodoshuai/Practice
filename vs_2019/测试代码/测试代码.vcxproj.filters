@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="计算字符串之间的距离.cpp">
+    <ClCompile Include="反转字符串.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
