@@ -87,6 +87,65 @@ class sy{
 		a=b;
 		b=tmp;
 	}
+	//堆排序
+	/**
+	*建堆，最后一行的非叶子节点为父节点开始向下调整，父节点不断向上移动，直到以根节点为父节点调整完毕 
+	**/ 
+	//一次调整_大堆 
+	void adjust(int k,int m){
+		int f=k;
+		int c=2*k+1;
+		while(c<=m){
+			//确保数组下表不越界，并比较左右子节点的大小 
+			if(c<m&&nums[c]<nums[c+1]){
+				c+=1;
+			}
+			if(nums[f]>nums[c]){
+				break;
+			}else{
+				Swap(nums[f],nums[c]);
+				f=c;
+				c=2*f+1;
+			}
+		}
+	}
+	void smalljust(int k,int m){
+		int f=k;
+		int c=2*k+1;
+		while(c<=m){
+			//确保数组下表不越界，并比较左右子节点的大小 
+			if(c<m&&nums[c]>nums[c+1]){
+				c+=1;
+			}
+			if(nums[f]<nums[c]){
+				break;
+			}else{
+				Swap(nums[f],nums[c]);
+				f=c;
+				c=2*f+1;
+			}
+		}
+	}
+	void  a_b_heapsort(){
+		int len=nums.size();
+		for(int i=len/2-1;i>=0;i--){
+			//大堆 
+			//adjust(i,len-1);
+			//小堆
+			smalljust(i,len-1); 
+		}
+		print();
+		cout<<"-------------------"<<endl;
+		for(int i=len-1;i>0;i--){
+			Swap(nums[0],nums[i]);
+			//adjust(0,i-1);
+			smalljust(0,i-1);
+			cout<<"-------------------"<<endl;
+			print();
+		}
+		
+	}
+	
 	private:
 		vector<int> nums;
 };
@@ -104,7 +163,8 @@ int main(){
 	q.print();
 	//q.zjpx();
 	//q.xiersort();
-	q.cpsort();
+	//q.cpsort();
+	q.a_b_heapsort();
 	q.print();
 	return 0;
 } 
