@@ -1,2 +1,5 @@
-﻿  养兔子.cpp
+﻿  求和.cpp
+F:\cangku\Practice\vs_2019\测试代码\求和.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
+F:\cangku\Practice\vs_2019\测试代码\求和.cpp(56): warning C4018: “<”: 有符号/无符号不匹配
+F:\cangku\Practice\vs_2019\测试代码\求和.cpp(58): warning C4018: “<”: 有符号/无符号不匹配
   测试代码.vcxproj -> F:\cangku\Practice\vs_2019\测试代码\Debug\测试代码.exe
