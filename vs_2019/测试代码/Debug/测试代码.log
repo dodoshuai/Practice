@@ -1,3 +1,5 @@
-﻿  单词倒排.cpp
-F:\cangku\Practice\vs_2019\测试代码\单词倒排.cpp(13): warning C4018: “<”: 有符号/无符号不匹配
+﻿  查找兄弟单词.cpp
+F:\cangku\Practice\vs_2019\测试代码\查找兄弟单词.cpp(10): warning C4018: “<”: 有符号/无符号不匹配
+F:\cangku\Practice\vs_2019\测试代码\查找兄弟单词.cpp(18): warning C4018: “<”: 有符号/无符号不匹配
+F:\cangku\Practice\vs_2019\测试代码\查找兄弟单词.cpp(29): warning C4018: “<=”: 有符号/无符号不匹配
   测试代码.vcxproj -> F:\cangku\Practice\vs_2019\测试代码\Debug\测试代码.exe
