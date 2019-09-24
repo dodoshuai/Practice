@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="马戏团.cpp">
+    <ClCompile Include="电话号码_腾讯笔试.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

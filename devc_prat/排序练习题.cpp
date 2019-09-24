@@ -145,7 +145,60 @@ class sy{
 		}
 		
 	}
+	//¿ìËÙÅÅÐò 
+	void quicksort(int left,int right){
+		if(left>right)
+		return;
+		int temp=nums[left];
+		int i=left;
+		int j=right;
+		while(i!=j){
+			while(nums[j]>=temp&&i<j)
+				j--;
+			while(nums[i]<=temp&&i<j)
+				i++;
+				if(i<j){
+					Swap(nums[i],nums[j]);
+				}
+		}
+		nums[left]=nums[i];
+		nums[i]=temp;
+		quicksort(left,i-1);
+		quicksort(i+1,right);
+	}
 	
+	void head(int k,int m){
+	int c=k*2+1;
+	int f=k;
+	while(c<=m){
+		if(c<m&&nums[c]<nums[c+1])
+		c++;
+		if(c<m&&nums[f]>nums[c]){
+			break;
+		}else{
+			Swap(nums[f],nums[c]);
+			f=c;
+			c=f*2+1;
+		}
+	}
+}
+void head_dd(){
+	int len=nums.size();
+	for(int i=len/2-1;i>=0;i--){
+		head(i,len-1);
+	}
+	print();
+	cout<<"222222222222222222"<<endl;
+	for(int i=len-1;i>0;i--){
+		cout<<"i="<<i<<endl;
+		print();
+		Swap(nums[i],nums[0]);
+		head(0,i-1);
+		cout<<"i="<<i<<endl;
+		print();
+	}
+	
+}
 	private:
 		vector<int> nums;
 };
@@ -164,7 +217,9 @@ int main(){
 	//q.zjpx();
 	//q.xiersort();
 	//q.cpsort();
-	q.a_b_heapsort();
+//	q.a_b_heapsort();
+q.head_dd();
+//	q.quicksort(0,a.size()-1); 
 	q.print();
 	return 0;
 } 
